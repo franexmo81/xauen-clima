@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg>
+<svg viewBox="-120 -15 280 110" width="420" height="125" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" >
+  <defs>
+    <mask id="mask-for-circle">
+      <rect width="100%" height="100%" fill="white"/>
+      <text text-anchor="middle" x="30" y="46" fill="black">X</text>
+      <text text-anchor="middle" x="30" y="92" fill="black">C</text>
+    </mask>
+    <mask id="mask-for-rect">
+      <rect width="100%" height="100%" fill="white"/>
+      <circle r="32" cx="30" cy="30" fill="black"/>
+      <text text-anchor="middle" x="30" y="92" fill="black">C</text>
+    </mask>
+  </defs>
+  <rect y="30" width="60" height="70" fill="RGB(223,40,62)" mask="url(#mask-for-rect)"/>
+  <circle cx="30" cy="30" r="30" fill="RGB(51,51,139)" mask="url(#mask-for-circle)"/>
+  <style>
+    text {
+      font: bold 50px serif;
+    }
+  </style>
+  <text text-anchor="end" x="-5" y="92" fill="RGB(51,51,139)">Xauen</text>
+  <text text-anchor="start" x="65" y="92" fill="RGB(223,40,62)" >Clima</text>
+  </svg>

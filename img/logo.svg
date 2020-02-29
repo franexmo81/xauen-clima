@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg>
+<svg viewBox="0 0 355 115" width="350" height="105" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMidYMid meet" >
+<!-- <rect width="100%" height="100%" fill="orange"/> -->
+
+  <defs>
+    <mask id="mask-for-circle">
+      <rect width="100%" height="100%" fill="white"/>
+      <!-- <text text-anchor="middle" x="30" y="92" fill="black">C</text> -->
+      <text text-anchor="middle" x="180" y="50" fill="black">X</text>
+    </mask>
+    <mask id="mask-for-rect">
+      <rect width="100%" height="100%" fill="white"/>
+      <circle r="32" cx="180" cy="34" fill="black"/>
+      <text text-anchor="middle" x="180" y="102" fill="black">C</text>
+    </mask>
+  </defs>
+  <rect x= "150" y="40" width="60" height="70" fill="RGB(223,40,62)" mask="url(#mask-for-rect)"/>
+  <circle cx="180" cy="34" r="30" fill="RGB(51,51,139)" mask="url(#mask-for-circle)"/>
+  <style>
+    text {
+      font: bold 50px serif;
+    }
+  </style>
+  <text text-anchor="end" x="145" y="102" fill="RGB(51,51,139)">Xauen</text>
+  <text text-anchor="start" x="215" y="102" fill="RGB(223,40,62)" >Clima</text>
+  <!-- <rect width="100%" height="100%" fill="red"/> -->
+  <!-- <rect width="400px" height="150px" fill="blue"/> -->
+  </svg>
+
+<!-- viewBox="-120 -15 280 120"  -->
+ <!-- width="400" height="135" -->
