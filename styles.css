@@ -1044,7 +1044,8 @@ header h2 {
 }
 
 .legal span {
-  color: RGB(51, 51, 139);
+  color: red;
+  font-weight: bold;
 }
 
 /* --------------------------------------------------------- */
