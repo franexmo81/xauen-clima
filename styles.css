@@ -830,6 +830,7 @@ header h2 {
 .form input,
 .form textarea {
   display: block;
+  font-size: inherit;
 }
 
 .form textarea {
