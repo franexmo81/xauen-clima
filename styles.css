@@ -435,6 +435,7 @@ header h2 {
   border: solid 0.1em #333;
   background-color: #eee;
   box-shadow: 0 0 0 #ddd;
+  cursor: pointer;
   transition: box-shadow 0.2s, transform 0.2s;
 }
 
