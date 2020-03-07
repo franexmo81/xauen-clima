@@ -304,6 +304,7 @@ nav a {
     margin-left: auto;
     color: RGB(225, 10, 32);
     float: right;
+    margin: 0.1em;
   }
 
   #nav-menu-button:hover,
