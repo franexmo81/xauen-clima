@@ -1,10 +1,6 @@
 /*
-
 Blue: RGB(51,51,139)
 Red: RGB(223,40,62)
-
-font-family: 'Merriweather', serif;
-font-family: 'Open Sans', sans-serif;
 */
 /* --------------------------------------------------------- */
 /* BASIC SETUP */
@@ -167,33 +163,33 @@ h3 {
 
 .btn-red,
 .form input[type=submit] {
-  border: 1px solid RGB(223,40,62);
-  background-color: RGB(223,40,62);
+  border: 1px solid RGB(223, 40, 62);
+  background-color: RGB(223, 40, 62);
   color: #fff;
 }
 
 .btn:hover,
-.form input[type=submit]:hover{
+.form input[type=submit]:hover {
   transform: translateY(-0.1em);
 }
 
 .btn:hover.btn-red,
 .form input[type=submit]:hover {
-  box-shadow: 0 0.1em 0.1em RGB(100,10,20);
+  box-shadow: 0 0.1em 0.1em RGB(100, 10, 20);
 }
 
 .btn:active,
-.form input[type=submit]:hover{
+.form input[type=submit]:hover {
   transform: translateY(-0.05em);
 }
 
 .btn:active.btn-red,
 .form input[type=submit]:active {
-  box-shadow: 0 0.05em 0.05em RGB(100,10,20);
+  box-shadow: 0 0.05em 0.05em RGB(100, 10, 20);
 }
 
 /* --------------------------------------------------------- */
-/* BARRAS DE NAVEGACION */
+/* NAVIGATION BARS */
 /* --------------------------------------------------------- */
 nav {
   z-index: 100;
@@ -249,11 +245,11 @@ nav a {
     transition: transform 0.2s;
   }
 
-  nav img:hover{
+  nav img:hover {
     transform: translateY(0.25em);
   }
 
-  nav img:active{
+  nav img:active {
     transform: translateY(0.5em);
   }
 
@@ -358,7 +354,6 @@ nav a {
 /* HEADER */
 /* --------------------------------------------------------- */
 header {
-  /* background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.9)), url(img/hero.jpg); */
   background-size: cover;
   background-position: right;
   background-attachment: fixed;
@@ -366,13 +361,12 @@ header {
   height: 100vh;
 }
 
-.cold-season{
+.cold-season {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(10, 0, 0, 0.9)), url(img/hero-winter.jpg);
 }
 
-.hot-season{
+.hot-season {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 5, 25, 0.9)), url(img/hero-summer.jpg);
-
 }
 
 .logo {
@@ -385,13 +379,6 @@ header {
   transition: all 1s;
 }
 
-/* .logo:hover {
-  position: absolute;
-  top: 0;
-  left:0;
-  margin:0.1em;
-  height: 1em;
-} */
 .hero-text-box {
   position: absolute;
   width: 75%;
@@ -415,15 +402,13 @@ header h2 {
 }
 
 /* --------------------------------------------------------- */
-/* QUE OFRECEMOS */
+/* WHAT WE OFFER SECTION */
 /* --------------------------------------------------------- */
-
 @media screen and (max-width: 972px) {
   .only-desktop {
     display: none;
   }
 }
-
 
 @media screen and (min-width: 973px) {
   .only-mobile {
@@ -431,78 +416,67 @@ header h2 {
   }
 }
 
-  .we-offer .section-content {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: flex-start;
-  }
+.we-offer .section-content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
 
-  .feature {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 14em;
-    text-align: center;
-    margin: 2em;
-    padding: 1em;
-    border-radius: 1em;
-    border: solid 0.1em #333;
-    background-color: #eee;
-    box-shadow: 0 0 0 #ddd;
-    transition: box-shadow 0.2s, transform 0.2s;
-  }
+.feature {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 14em;
+  text-align: center;
+  margin: 2em;
+  padding: 1em;
+  border-radius: 1em;
+  border: solid 0.1em #333;
+  background-color: #eee;
+  box-shadow: 0 0 0 #ddd;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
 
-  .feature:hover {
-    /* background-color: #eee; */
-    transform: scale(1.1);
-    box-shadow: 0.3em 0.3em 0.3em #ddd;
-  }
+.feature:hover {
+  transform: scale(1.1);
+  box-shadow: 0.3em 0.3em 0.3em #ddd;
+}
 
-  .feature-title {
-    text-align: center;
-    padding: 1em 0;
-    color: inherit;
-    transition: font-weight 0.5s;
-    letter-spacing: 0.15em;
-  }
+.feature-title {
+  text-align: center;
+  padding: 1em 0;
+  color: inherit;
+  transition: font-weight 0.5s;
+  letter-spacing: 0.15em;
+}
 
-  .feature-description {
-    text-align: justify;
+.feature-description {
+  text-align: justify;
+  max-height: 0;
+  transition: max-height 1s;
+  overflow: hidden;
+}
 
+.feature:hover .feature-description {
+  max-height: 100vh;
+}
 
-    max-height: 0;
-    transition: max-height 1s;
-    overflow: hidden;
-  }
+.feature-description p {
+  text-align: justify;
+  font-size: 0.8em;
+  margin: 1em 0;
+}
 
-  .feature:hover .feature-description{
-    max-height: 100vh;
-  }
+.btn-line {
+  max-height: 0.1em;
+  padding: 0;
+}
 
-  .feature-description p {
-    text-align: justify;
-    font-size: 0.8em;
-    margin: 1em 0;
-    transition: opacity 0.2s 1s;
-  }
-
-  .feature:hover .feature-description p {
-    display:block;
-    opacity: 1;
-  }
-
-  .btn-line {
-    max-height: 0.1em;
-    padding: 0;
-  }
-
-  .feature:hover .btn-line {
-    max-height: 100vh;
-    padding: 10px 30px;
-  }
-
-
+.feature:hover .btn-line {
+  max-height: 100vh;
+  padding: 10px 30px;
+}
 
 .feature-icon {
   position: relative;
@@ -600,10 +574,8 @@ header h2 {
   transform: translateX(-50%);
 }
 
-
-
 /* --------------------------------------------------------- */
-/* SERVICIOS */
+/* SERVICES SECTION */
 /* --------------------------------------------------------- */
 #services {
   background-color: #eee;
@@ -644,7 +616,6 @@ header h2 {
     margin: 0;
   }
 }
-
 
 .a-a {
   background-image: url(img/a-a.jpg);
@@ -688,127 +659,14 @@ header h2 {
   color: RGB(223, 40, 62);
 }
 
-
-
 /* --------------------------------------------------------- */
-/* MARCAS */
+/* BRANDS SECTION */
 /* --------------------------------------------------------- */
 .brands-header,
 .brands-footer {
   text-align: center;
 }
 
-/* Slider */
-/* .slick-slide {
-  margin: 0px 20px;
-}
-
-.slick-slide img {
-  width: 100%;
-}
-
-.slick-slider {
-  position: relative;
-  display: block;
-  box-sizing: border-box;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-touch-callout: none;
-  -khtml-user-select: none;
-  -ms-touch-action: pan-y;
-  touch-action: pan-y;
-  -webkit-tap-highlight-color: transparent;
-}
-
-.slick-list {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  margin: 0;
-  padding: 0;
-}
-
-.slick-list:focus {
-  outline: none;
-}
-
-.slick-list.dragging {
-  cursor: pointer;
-  cursor: hand;
-}
-
-.slick-slider .slick-track,
-.slick-slider .slick-list {
-  -webkit-transform: translate3d(0, 0, 0);
-  -moz-transform: translate3d(0, 0, 0);
-  -ms-transform: translate3d(0, 0, 0);
-  -o-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
-}
-
-.slick-track {
-  position: relative;
-  top: 0;
-  left: 0;
-  display: block;
-}
-
-.slick-track:before,
-.slick-track:after {
-  display: table;
-  content: '';
-}
-
-.slick-track:after {
-  clear: both;
-}
-
-.slick-loading .slick-track {
-  visibility: hidden;
-}
-
-.slick-slide {
-  display: none;
-  float: left;
-  height: 100%;
-  min-height: 1px;
-}
-
-[dir='rtl'] .slick-slide {
-  float: right;
-}
-
-.slick-slide img {
-  display: block;
-}
-
-.slick-slide.slick-loading img {
-  display: none;
-}
-
-.slick-slide.dragging img {
-  pointer-events: none;
-}
-
-.slick-initialized .slick-slide {
-  display: block;
-}
-
-.slick-loading .slick-slide {
-  visibility: hidden;
-}
-
-.slick-vertical .slick-slide {
-  display: block;
-  height: auto;
-  border: 1px solid transparent;
-}
-
-.slick-arrow.slick-hidden {
-  display: none;
-} */
 .brands .section-content {
   padding: 3em;
   border-top: 0.2em solid RGB(223, 40, 62);
@@ -861,7 +719,7 @@ header h2 {
 }
 
 /* --------------------------------------------------------- */
-/* CONTACTO */
+/* CONTACT SECTION */
 /* --------------------------------------------------------- */
 .contact {
   background-color: #eee;
@@ -892,7 +750,6 @@ header h2 {
   height: 3em;
   display: inline-flex;
   margin-right: 0.2em;
-  /* margin-top: 1em; */
 }
 
 .icon-maps {
@@ -934,7 +791,7 @@ header h2 {
   margin: 0;
 }
 
-.contact  a {
+.contact a {
   text-decoration: none;
   color: RGB(51, 51, 139);
   border-bottom: solid 0.1em transparent;
@@ -942,11 +799,11 @@ header h2 {
   transition: border 0.2s;
 }
 
-.contact  a:hover {
+.contact a:hover {
   border-bottom: solid 0.1em RGB(51, 51, 139);
 }
 
-.copyMessage{
+.copyMessage {
   margin: 0;
   font-size: 0.75em;
   font-style: italic;
@@ -955,16 +812,16 @@ header h2 {
   transition: opacity 1s 0.5s;
 }
 
-.copyMessage.copyMessageHidden{
+.copyMessage.copyMessageHidden {
   display: none;
   opacity: 0;
 }
 
-#copySuccessMessage{
+#copySuccessMessage {
   color: green;
 }
 
-#copyErrorMessage{
+#copyErrorMessage {
   color: red;
 }
 
@@ -990,7 +847,7 @@ header h2 {
 }
 
 /* --------------------------------------------------------- */
-/* PIE DE PAGINA */
+/* FOOTER */
 /* --------------------------------------------------------- */
 .footer {
   height: auto;
@@ -1024,7 +881,7 @@ header h2 {
 }
 
 /* --------------------------------------------------------- */
-/* AVISO LEGAL */
+/* LEGAL PAGE */
 /* --------------------------------------------------------- */
 .legal .section-image {
   background-image: url(img/legal.jpg);
@@ -1049,10 +906,9 @@ header h2 {
 }
 
 /* --------------------------------------------------------- */
-/* ATRIBUCIONES */
+/* ATTRIBUTIONS PAGE */
 /* --------------------------------------------------------- */
-
-#attributions ul{
+#attributions ul {
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -1061,7 +917,7 @@ header h2 {
   align-items: flex-start;
 }
 
-#attributions li{
+#attributions li {
   margin-top: 2em;
   text-align: center;
   flex-basis: 18em;
@@ -1069,35 +925,34 @@ header h2 {
 }
 
 .img,
-.img-description{
+.img-description {
   margin: 0 3em;
 }
 
-.img{
+.img {
   height: 200px;
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
-
 }
 
-#attributions a{
+#attributions a {
   text-decoration: none;
-  color: RGB(51,51,139);
+  color: RGB(51, 51, 139);
   border-bottom: solid 0.1em transparent;
   transition: border 0.2s;
 }
 
-#attributions a:hover{
+#attributions a:hover {
   /* text-decoration: underline; */
-  border-bottom: solid 0.1em RGB(51,51,139);
+  border-bottom: solid 0.1em RGB(51, 51, 139);
 }
 
-.img-hero-summer{
+.img-hero-summer {
   background-image: url(img/hero-summer.jpg);
 }
 
-.img-hero-winter{
+.img-hero-winter {
   background-image: url(img/hero-winter.jpg);
 }
 
