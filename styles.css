@@ -357,7 +357,6 @@ nav a {
 /* --------------------------------------------------------- */
 header {
   background-size: cover;
-  background-position: right;
   background-attachment: fixed;
   position: relative;
   height: 100vh;
@@ -365,10 +364,12 @@ header {
 
 .cold-season {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(10, 0, 0, 0.9)), url(img/hero-winter.jpg);
+  background-position: right;
 }
 
 .hot-season {
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 5, 25, 0.9)), url(img/hero-summer.jpg);
+  background-position: center;
 }
 
 .logo {
