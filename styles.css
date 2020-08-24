@@ -19,6 +19,7 @@ body {
   line-height: 150%;
   text-rendering: optimizeLegibility;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 
 /* Set the font size to go between being 16px on a 320px screen to 22px on a 1350px screen */
