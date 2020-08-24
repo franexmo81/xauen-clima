@@ -415,6 +415,32 @@ header h2 {
   text-shadow: 0.1rem 0.1rem RGB(223, 40, 62);
 }
 
+.chevron-button{
+	position: absolute;
+	display: inline-block;
+	bottom: 5%;
+	left: 50%;
+	transform: translateX(-50%);
+	padding: 0.8rem;
+	padding-bottom: 1.6rem;
+	border: 0.1rem solid RGB(223, 40, 62);
+	background-color: rgba(0, 0, 0, 0.2);
+	border-radius: 2rem;
+	text-align: center;
+}
+
+.chevron-button i{
+	display: inline-block;
+	color: RGB(223, 40, 62);
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: transform 0.2s;
+}
+
+.chevron-button:hover i{
+	transform: translateY(1rem);
+}
+
 /* --------------------------------------------------------- */
 /* WHAT WE OFFER SECTION */
 /* --------------------------------------------------------- */
