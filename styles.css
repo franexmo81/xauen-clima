@@ -397,11 +397,13 @@ header h2 {
 }
 
 .underline-blue {
-  border-bottom: solid 0.05em RGB(51, 51, 139);
+  border-bottom: solid 0.1em RGB(51, 51, 139);
+  text-shadow: 0.1rem 0.1rem RGB(51, 51, 139);
 }
 
 .underline-red {
-  border-bottom: solid 0.05em RGB(223, 40, 62);
+  border-bottom: solid 0.1em RGB(223, 40, 62);
+  text-shadow: 0.1rem 0.1rem RGB(223, 40, 62);
 }
 
 /* --------------------------------------------------------- */
